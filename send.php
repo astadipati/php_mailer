@@ -7,7 +7,7 @@ include('phpmailer/Exception.php');
 include('phpmailer/PHPMailer.php');
 include('phpmailer/SMTP.php');
 
-$email_pengirim = 'asekbos@gmail.com'; // Isikan dengan email pengirim
+$email_pengirim = 'xxxx'; // Isikan dengan email pengirim
 $nama_pengirim = 'PTA Surabaya'; // Isikan dengan nama pengirim
 $email_penerima = $_POST['email_penerima']; // Ambil email penerima dari inputan form
 $subjek = $_POST['subjek']; // Ambil subjek dari inputan form
@@ -17,9 +17,9 @@ $attachment = $_FILES['attachment']['name']; // Ambil nama file yang di upload
 $mail = new PHPMailer;
 $mail->isSMTP();
 
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'xxxxxx';
 $mail->Username = $email_pengirim; // Email Pengirim
-$mail->Password = 'Kul0nuwun-bos'; // Isikan dengan Password email pengirim
+$mail->Password = 'xxxxx'; // Isikan dengan Password email pengirim
 $mail->Port = 465;
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'ssl';
@@ -38,7 +38,7 @@ ob_end_clean();
 
 $mail->Subject = $subjek;
 $mail->Body = $content;
-$mail->AddEmbeddedImage('image/logo.png', 'logo_mynotescode', 'logo.png'); // Aktifkan jika ingin menampilkan gambar dalam email
+$mail->AddEmbeddedImage('image/logo.png', 'PTA Surabaya', 'logo.png'); // Aktifkan jika ingin menampilkan gambar dalam email
 
 if(empty($attachment)){ // Jika tanpa attachment
     $send = $mail->send();
