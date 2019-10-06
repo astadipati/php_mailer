@@ -9,7 +9,6 @@
 
     <h2 style="margin-bottom: 0;">PTA Surabaya</h2>
     http://www.pta-surabaya.go.id/
-
     <div style="clear: both"></div>
     <hr />
 
