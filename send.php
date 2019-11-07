@@ -3,9 +3,9 @@
 // include_once("config.php");
 // $connect = mysqli_connect("localhost", "root", "Kul0nuwun", "autopost");
 $databaseHost = 'localhost';
-$databaseName = 'db_master';
-$databaseUsername = 'root';
-$databasePassword = '100surabaya';
+$databaseName = 'xxx';
+$databaseUsername = 'xxx';
+$databasePassword = 'xxx';
 
 $conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
 
@@ -17,7 +17,7 @@ include('phpmailer/Exception.php');
 include('phpmailer/PHPMailer.php');
 include('phpmailer/SMTP.php');
 
-$email_pengirim = 'asekbos@gmail.com'; // Isikan dengan email pengirim
+$email_pengirim = 'xxx'; // Isikan dengan email pengirim
 $nama_pengirim = 'PTA Surabaya'; // Isikan dengan nama pengirim
 
 $pesan = $_POST['pesan']; // Ambil pesan dari inputan form
@@ -42,7 +42,7 @@ $mail->isSMTP();
 
 $mail->Host = 'smtp.gmail.com';
 $mail->Username = $email_pengirim; // Email Pengirim
-$mail->Password = 'Kul0nuwun-bos'; // Isikan dengan Password email pengirim
+$mail->Password = 'xxx'; // Isikan dengan Password email pengirim
 $mail->Port = 465;
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'ssl';

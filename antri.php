@@ -6,9 +6,9 @@ echo '<meta http-equiv="refresh" content="'.$secondsWait.'">';
 // include_once("config.php");
 // $result = mysqli_query($mysqli, "SELECT * from v_info_pihak");
 $databaseHost = 'localhost';
-$databaseName = 'db_master';
-$databaseUsername = 'root';
-$databasePassword = '100surabaya';
+$databaseName = 'xxx';
+$databaseUsername = 'xxx';
+$databasePassword = 'xxx';
 
 $conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
 $sql="select a.nomor_perkara_pn, a.permohonan_banding, a.tanggal_register_banding, a.nomor_perkara_banding, a.pihak_nama, a.alamat, a.email_satker, b.cek_status
